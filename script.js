@@ -82,7 +82,7 @@ for(i in data){
 
 function getDetails(v) {
     var d = "";
-    d += "<a href='detail'><div class=' w3-content max'>" + "<img src=" + data.Search[v].Poster + "><p>"+'Title: '+data.Search[v].Title+'<br>Type: '+data.Search[v].Type +'<br>Year: '+data.Search[v].Year+'<br>imdbID: '+data.Search[v].imdbID+"</p></div></a>";
+    d += "<div class=' w3-content max'>" + "<img src=" + data.Search[v].Poster + "><p>"+'Title: '+data.Search[v].Title+'<br>Type: '+data.Search[v].Type +'<br>Year: '+data.Search[v].Year+'<br>imdbID: '+data.Search[v].imdbID+"</p></div>";
     document.getElementById("detail").innerHTML =d;
     divi.style.display='block';
 
