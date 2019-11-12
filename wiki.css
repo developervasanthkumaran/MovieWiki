@@ -1,0 +1,74 @@
+body{
+    background-color:#24231f;
+    color: white;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+.flex-container {
+    display: flex;
+    flex-wrap:  wrap;
+    flex-flow: row wrap;
+    padding-left: 30px;
+    padding-top: 25px;
+  }
+  .flex-container .max{
+    display: flex;
+    padding-left: 30px;
+    padding-top: 25px;
+    width: 100%;
+    background-color: black;
+  }
+
+  .flex-container  div{
+    margin: 30px;
+    width: 15%;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+  }
+
+input::-webkit-input-placeholder {
+    line-height: 3;
+    padding-left: 10px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.flex-container  div img{
+width: 100%;
+height: 100%;
+}
+
+.flex-container  div h4{
+    float: left;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+.flex-container  div p {
+  font-family: monospace;
+  font-size: large;
+  text-align:left;
+}
+.flex-container  div h1{
+  font-weight: bolder;
+  color: white;
+}
+
+.d:hover {
+    -moz-transform: translate(-2px, -2px);
+    -ms-transform: translate(-2px, -2px);
+    -o-transform: translate(-2px, -2px);
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px)
+}
+
+.footer{
+   width: 100%;
+ height: 100%;
+ background-color: #24231f;
+ color: white;
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<title>Document</title>
+
+<body>
+     <div class="w3-center">
+<header>
+<p>movie<darker>wiki</darker></p>
+</header>
+<form action="search.html" onsubmit="return passValue()">
+        <input type="text" size="50" id="txtbox" placeholder="Search For Movies" name="searchbox">
+        <input type="submit" id="submit" value="Search" style="background-color:white;border:0pt;" onclick="passValue()">
+</form>
+</div>
+    <script>
+          function passValue(){
+
+              var value= document.getElementById("txtbox").value;
+              if(value==""){
+                alert(' Please enter any movie name to continue');
+                return false;
+            }
+            else
+              localStorage.setItem("txtvalue",value);
+          }
+    </script>
+</body>
+</html>
