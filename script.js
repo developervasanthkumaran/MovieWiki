@@ -45,7 +45,7 @@ async function get() {
              x=false;
         }
     
-    const url = 'http://www.omdbapi.com/?apikey=e181a4c1&plot=full&s=';
+    const url = 'https://www.omdbapi.com/?apikey=e181a4c1&plot=full&s=';
     const response = await fetch(url + value + '&page=' + count);
     data = await response.json();
     var d = ""
@@ -68,7 +68,7 @@ for(i in data){
             d += "<div class='w3-hover-shadow d' id=" + n + " onclick=getDetails("+n+")>" + "<img src=" + data.Search[n].Poster + "><h4>" + data.Search[n].Title + "</h4> </div>";
         }
         else if (data.Search[n].Poster == "N/A"){
-            d += "<div class='w3-hover-shadow '>" + "<img src='nan.jpg'><h4>" + data.Search[n].Title + "</h4> </div>";
+            d += "<div class='w3-hover-shadow '>" + "<img src='image/nan.jpg'><h4>" + data.Search[n].Title + "</h4> </div>";
         }
     }
 }
